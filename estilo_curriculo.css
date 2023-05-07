@@ -1,0 +1,151 @@
+/*Utilizei a abordagem Mobile First*/
+
+body {
+	font: 15px "Segoe UI";
+	background-color: #f5f7fa;
+}
+
+/*Cabeçalho com nome e ícones de redes sociais*/
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #434a54;
+	margin: 0 auto;
+	width: 95%;
+	height: 15%;
+}
+
+#header-left {
+	width: 70%;
+}
+
+#header-right {
+	float: right;
+	width: 30%;
+}
+
+i{
+	margin: 0 5px;
+}
+
+/*Corpo do site*/
+
+main {
+	border-radius: 10px;
+	margin: 0 auto;
+	width: 95%;
+	height: 100%;
+	box-shadow: 10px 10px 30px gray;
+}
+
+/*Banner com foto responsiva*/
+
+#banner {
+	display: inline-flex;
+	border-radius: 10px;
+	width: 100%;
+	height: 240px;
+	background: url("imagens/livro.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*Configuração para foto pessoal com animação*/
+
+#personal-pic {
+	margin: 100px auto;
+	width: 200px;
+	height: 200px;
+	animation: fade-in 1.5s;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; height: 0}
+  100% { opacity: 1; height: 200px}
+}
+
+#personal-pic img{
+    border-radius: 100%;
+    border: 3px solid white;
+}
+
+/*Configuração do meu nome com animação de digitação*/
+
+#my-name {
+	display: inline-block;
+}
+
+.digitado {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: digitando 1.5s steps(30, end) forwards, piscando 0.5s infinite;
+  border-right: 5px solid black;
+  margin: 0 auto;
+}
+
+@keyframes digitando {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes piscando {
+	0% {border-right-color: transparent}
+  	50% {border-right-color: black;}
+  	100% {border-right-color: transparent}
+}
+
+/*Configurando restante dos conteudos*/
+/*Essas classes vão fazer mais sentido quando a tela for maior*/
+
+.info-left {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.info-right {
+	margin: 0 auto;
+	padding: 15px;
+	width: 90%;
+}
+
+.key {
+	width: 50%;
+	color: #434A54;
+}
+
+.def {
+	color: #656D78;
+}
+
+.info-left img {
+	margin: 0 5px;
+}
+
+/*Configurando responsividade para desktop*/
+
+@media only screen and (min-width: 740px) {
+	body {
+		font: 18px "Segoe UI";
+	}
+	header, main {
+		width: 80%;
+	}
+
+	.display-flex {
+		display: flex;
+	}
+
+	.info-left {
+		padding: 15px;
+		width: 50%;
+	}
+
+	.info-right {
+		float: right;
+		width: 50%;
+	}
+}
