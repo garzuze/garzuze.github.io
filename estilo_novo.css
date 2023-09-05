@@ -16,9 +16,7 @@ body {
 
 .inner-headings span {
   position: relative;
-  color: #023e8a;
   animation: spin_words 5s ease infinite;
-
 }
 
 @keyframes spin_words {
