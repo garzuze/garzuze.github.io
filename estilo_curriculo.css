@@ -121,6 +121,11 @@ main {
 	color: #656D78;
 }
 
+.def a{
+	color: #656D78;
+	text-decoration: none;
+}
+
 .info-left img {
 	margin: 0 5px;
 }
