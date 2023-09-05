@@ -1,19 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lato&family=Open+Sans:wght@300&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.inner-headings {
+  border: 0px solid white;
+  height: 28px;
+  line-height: 28px;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.inner-headings span {
+  position: relative;
+  color: #023e8a;
+  animation: spin_words 5s ease infinite;
+
+}
+
+@keyframes spin_words {
+
+  0%,
+  100% {
+    top: 0;
+  }
+
+  20% {
+    top: 0;
+  }
+
+  25% {
+    top: -28px;
+  }
+
+  45% {
+    top: -28px;
+  }
+
+  50% {
+    top: -56px;
+  }
+
+  70% {
+    top: -56px;
+  }
+
+  75% {
+    top: -84px;
+  }
+
+  95% {
+    top: -84px;
+  }
+
+}
+
 #digitado {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    animation: digitando 1.5s steps(30, end) forwards, piscando 0.5s infinite;
-    border-right: 2px solid black;
-    margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: digitando 1.5s steps(30, end) forwards, piscando 0.5s infinite;
+  border-right: 2px solid black;
+  margin: 0 auto;
+}
+
+@keyframes digitando {
+  from {
+    width: 0
   }
-  
-  @keyframes digitando {
-    from { width: 0 }
-    to { width: 100% }
+
+  to {
+    width: 100%
   }
-  
-  @keyframes piscando {
-      0% {border-right-color: transparent}
-        50% {border-right-color: black;}
-        100% {border-right-color: transparent}
+}
+
+@keyframes piscando {
+  0% {
+    border-right-color: transparent
   }
+
+  50% {
+    border-right-color: black;
+  }
+
+  100% {
+    border-right-color: transparent
+  }
+}
