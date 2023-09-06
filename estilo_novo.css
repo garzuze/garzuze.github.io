@@ -16,42 +16,46 @@ body {
 
 .inner-headings span {
   position: relative;
-  animation: spin_words 5s ease infinite;
+  animation: spin_words 12s ease infinite;
+  animation-delay: 1s;
 }
 
 @keyframes spin_words {
-
   0%,
   100% {
     top: 0;
   }
+  
+  10% {
+    top: -28px;
+  }
 
   20% {
-    top: 0;
+    top: -56px;
   }
 
-  25% {
-    top: -28px;
+  30% {
+    top: -84px;
   }
 
-  45% {
-    top: -28px;
+  40% {
+    top: -112px;
   }
 
   50% {
-    top: -56px;
+    top: -140px;
   }
 
-  70% {
-    top: -56px;
+  60% {
+    top: -168px;
   }
 
-  75% {
-    top: -84px;
+  80% {
+    top: -196px;
   }
 
-  95% {
-    top: -84px;
+  90% {
+    top: -224px;
   }
 
 }
