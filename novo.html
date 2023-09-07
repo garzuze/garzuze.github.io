@@ -143,7 +143,8 @@
                     </div>
 
                     <div data-aos="fade-right" data-aos-duration="1000"
-                        class="learning p-8 space-y-3 border-2 border-[#0096c7]  rounded-xl">
+                        class="learning p-8 space-y-3 border-2 border-[#0096c7] rounded-xl">
+                        <!-- transform transition hover:scale-125 (vai que eu preciso) -->
                         <span class="inline-block text-[#0096c7]">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -171,7 +172,7 @@
     <!-- Sessão de sobre -->
     <section class="about-me grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mt-10 md:px-10 sm:px-4">
         <div
-            class="about-me-photo rounded-xl lg:col-span-2 px-4 bg-center sm:bg-left bg-fixed bg-[url('imagens/foto_sobre.jpg')]">
+            class="about-me-photo rounded-xl lg:col-span-2 px-4 bg-center bg-repeat-x sm:bg-left bg-fixed bg-[url('imagens/foto_sobre.jpg')]">
             <!-- <img src="imagens/eu_redimensionado.jpg" class="rounded-xl h-[414px]"> -->
             <div class="h-96"></div>
         </div>
@@ -213,7 +214,121 @@
             </a>
         </p>
     </section>
-    
+    <!-- Sessão com experiências e projetos -->
+    <section class="experinces-idioms pt-8 px-4 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mb-8"
+        data-aos="fade-right">
+        <div class="experience lg:col-span-3 md:px-10 p-4">
+            <h1 class="text-3xl font-semibold text-gray-800 lg:text-4xl mb-4 text-center">
+                Minha <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#0077b6] from-[#00b4d8]">
+                    experiência:</span>
+            </h1>
+
+            <ol class="relative border-l border-gray-200">
+                <li class="mb-10 ml-6">
+                    <span
+                        class="absolute flex items-center justify-center w-6 h-6 bg-[#90e0ef] text-[#023e8a] rounded-full -left-3 ring-8 ring-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                        </svg>
+
+                    </span>
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">
+                        Bolsista no projeto Textos e Contextos, IFPR
+                    </h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400">
+                        Duração: 08/2022 até 12/2022.
+                    </time>
+                    <p class="mb-4 text-base font-normal text-gray-500">
+                        Produção de textos, escrita e conhecimento sobre atualidades melhorados.
+                    </p>
+                </li>
+                <li class="mb-10 ml-6">
+                    <span
+                        class="absolute flex items-center justify-center w-6 h-6 bg-[#90e0ef] text-[#023e8a] rounded-full -left-3 ring-8 ring-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                        </svg>
+
+                    </span>
+                    <h3 class="mb-1 text-lg font-semibold text-gray-900 ">Menor aprendiz como Auxiliar Administrativo
+                    </h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400">
+                        Tempo de trabalho: 03/2021 até 07/2022.
+                    </time>
+                    <p class="text-base font-normal text-gray-500">
+                        Capacidade de solução de problemas, atendimento ao cliente e relação interpessoal melhorados.
+                    </p>
+                </li>
+            </ol>
+
+        </div>
+        <div class="idioms lg:col-span-2 md:px-10 p-4" data-aos="fade-left  ">
+            <h1 class="text-3xl font-semibold text-gray-800 lg:text-4xl mb-4 text-center">
+                Idiomas:</span>
+            </h1>
+
+            <div class="border-l-2">
+                <!-- Ingles -->
+                <div
+                    class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-gradient-to-r to-[#023E8A] from-[#03045E] text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                    <!-- bolinha -->
+                    <div
+                        class="w-5 h-5 bg-gradient-to-r to-[#023E8A] from-[#03045E] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0">
+                    </div>
+
+                    <!-- linha horizontal -->
+                    <div class="w-10 h-1 bg-gradient-to-r to-[#023E8A] from-[#03045E] absolute -left-10 z-0"></div>
+
+                    <!-- conteudo -->
+                    <div class="flex-auto">
+                        <h1 class="mb-1 text-lg font-semibold">Inglês</h1>
+                        <h3>Intermediário-avançado (B2)</h3>
+                    </div>
+                </div>
+                <!-- Espanhol -->
+                <div
+                    class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-gradient-to-r to-[#0077B6] from-[#0077B6] text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                    <!-- bolinha -->
+                    <div
+                        class="w-5 h-5 bg-gradient-to-r to-[#0077B6] from-[#0077B6] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0">
+                    </div>
+
+                    <!-- linha horizontal -->
+                    <div class="w-10 h-1 bg-gradient-to-r to-[#0077B6] from-[#0077B6] absolute -left-10 z-0"></div>
+
+                    <!-- conteudo -->
+                    <div class="flex-auto">
+                        <h1 class="mb-1 text-lg font-semibold">Espanhol</h1>
+                        <h3>Intermediário (B1)</h3>
+                    </div>
+                </div>
+
+                <!-- Francês -->
+
+                <div
+                    class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-gradient-to-r to-[#0096C7] from-[#0096C7] text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                    <!-- bolinha -->
+                    <div
+                        class="w-5 h-5 bg-gradient-to-r to-[#0096C7] from-[#0096C7] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0">
+                    </div>
+
+                    <!-- linha horizontal -->
+                    <div class="w-10 h-1 bg-gradient-to-r to-[#0096C7] from-[#0096C7] absolute -left-10 z-0"></div>
+
+                    <!-- conteudo -->
+                    <div class="flex-auto">
+                        <h1 class="mb-1 text-lg font-semibold">Françês</h1>
+                        <h3>Básico (A1)</h3>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
     <!-- Scripts e etc -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
