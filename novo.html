@@ -36,35 +36,35 @@
                 <ul
                     class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
                     <li>
-                        <a href="#"
+                        <a href="#home"
                             class=" font-sans font-light block py-2 pl-3 pr-4 text-[#48cae4] rounded sm:border-0 hover:underline sm:p-0">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#sobre-mim"
                             class="font-sans font-light	block py-2 pl-3 pr-4 text-[#00b4d8] rounded sm:border-0 hover:underline sm:p-0">
                             Sobre mim
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#projetos"
                             class="font-sans font-light	block py-2 pl-3 pr-4 text-[#0096c7] rounded  sm:border-0 hover:underline sm:p-0">Projetos</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#experiencia"
                             class="font-sans font-light	block py-2 pl-3 pr-4 text-[#0077b6] rounded  sm:border-0 hover:underline sm:p-0">Experiência</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#contato"
                             class="font-sans font-light block py-2 pl-3 pr-4 text-[#023e8a] rounded  sm:border-0 hover:underline sm:p-0">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Primeira sessão de conteúdo ("hero") -->
-    <section class="hero h-64 pt-8 text-center">
+    <!-- Primeira Seção de conteúdo ("hero") -->
+    <section class="hero h-64 pt-8 text-center" id="home">
         <div class="inline-block">
             <h1 id="digitado" class="font-bold text-3xl sm:text-6xl">Lucas Garzuze Cordeiro</h1>
         </div>
@@ -82,25 +82,29 @@
             </div>
         </div>
         <a href="#"
-            class="bg-gradient-to-r to-[#0077b6] from-[#00b4d8] mt-6 inline-flex items-center bg-blue-800 hover:shadow-lg hover:shadow-cyan-500/50 text-white rounded-lg font-bold px-5 py-2.5 text-center">
+            class="bg-gradient-to-r to-[#0077b6] from-[#00b4d8] mt-6 inline-flex items-center bg-blue-800 shadow-[0_9px_0_rgb(2,62,138)] hover:shadow-[0_4px_0px_rgb(2,62,138)] ease-out hover:translate-y-1 transition-all text-white rounded-lg font-bold px-5 py-2.5 text-center">
             Entrar em contato
         </a>
     </section>
-    <!-- Sessão com foto bem bonita em parallax -->
-    <section class="main-photo h-96 bg-fixed bg-center bg-no-repeat bg-cover bg-[url('imagens/foto_main.png')]">
+    <!-- Seção com foto bem bonita em parallax -->
+    <section class="main-photo h-96 bg-fixed bg-contain bg-cover bg-[url('imagens/foto_main.png')]">
     </section>
     <!-- Coisas que eu faço -->
-    <section class="features">
+    <section class="features" id="sobre-mim">
         <section class="bg-white">
-            <div data-aos="fade-down" class="feature-title container px-6 py-10 mx-auto">
-                <h1 class="text-3xl font-semibold text-gray-800 text-center lg:text-4xl">
-                    Minhas
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#0077b6] from-[#00b4d8]">
-                        habilidades
-                    </span>
-                    como desenvolvedor:
-                </h1>
+            <div data-aos="fade-down" class="feature-title container px-6 py-10 mx-auto text-center">
+                <div class="relative group inline-block">
+                    <h1 class="text-3xl font-semibold text-gray-800 text-center lg:text-4xl">
+                        Minhas
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00b4d8] to-[#0077b6]">
+                            habilidades
+                        </span>
+                        como desenvolvedor:
 
+                    </h1>
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-1 bg-gradient-to-r from-[#00b4d8] to-[#0077b6] transition-all group-hover:w-full"></span>
+                </div>
                 <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
                     <div data-aos="fade-right" data-aos-duration="1000"
                         class="full-stack p-8 space-y-3 border-2 border-[#0096c7] rounded-xl">
@@ -113,11 +117,11 @@
 
                         </span>
 
-                        <h1 class="text-2xl font-semibold text-gray-700">
+                        <h1 class="text-2xl font-bold text-gray-700">
                             Desenvolvimento Fullstack!
                         </h1>
 
-                        <p class="text-gray-500">
+                        <p class="text-gray-500 font-semibold">
                             Sites visualmente atrativos e com foco no usuário. Integração backend com PHP ou Django.
                         </p>
                     </div>
@@ -132,12 +136,12 @@
                             </svg>
                         </span>
 
-                        <h1 class="text-2xl font-semibold text-gray-700">
+                        <h1 class="text-2xl font-bold text-gray-700">
                             Design criativo e agradável aos olhos!
                         </h1>
 
-                        <p class="text-gray-500">
-                            Procuro me atualizar das tendências de desing e me esforço para trazer resultados que
+                        <p class="text-gray-500 font-semibold">
+                            Procuro me atualizar das tendências de design e me esforço para trazer resultados que
                             impressionam.
                         </p>
                     </div>
@@ -154,11 +158,11 @@
 
                         </span>
 
-                        <h1 class="text-2xl font-semibold text-gray-700 capitalize">
+                        <h1 class="text-2xl font-bold text-gray-900 capitalize">
                             Aprendizado contínuo!
                         </h1>
 
-                        <p class="text-gray-500">
+                        <p class="text-gray-500 font-semibold">
                             Amo aprender e procuro me capacitar todos os dias para ser uma pessoa (e um desenvolvedor)
                             melhor!
                         </p>
@@ -169,12 +173,11 @@
 
 
     </section>
-    <!-- Sessão de sobre -->
+    <!-- Seção de sobre -->
     <section class="about-me grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mt-10 md:px-10 sm:px-4">
-        <div
-            class="about-me-photo rounded-xl bg-repeat-space lg:col-span-2 px-4 bg-center bg-repeat-x sm:bg-left bg-fixed bg-[url('imagens/foto_sobre.jpg')]">
-
-            <div class="h-96"></div>
+        <div class="lg:col-span-2">
+            <img src="imagens/foto_sobre.jpg"
+                class="w-full h-72 object-cover rounded-xl inset-0 grayscale hover:grayscale-0 transition duration-300 hover:shadow-2xl">
         </div>
         <div class="about-me-text lg:col-span-3 md:px-10 p-4" data-aos="fade-down">
             <h1 class="text-3xl font-semibold text-gray-800 lg:text-4xl mb-4">
@@ -191,14 +194,14 @@
             </p>
         </div>
     </section>
-    <!-- Sessão com linguagens e ferramentas -->
+    <!-- Seção com linguagens e ferramentas -->
     <section class="tools h-64 pt-8 text-center mb-8" data-aos="fade-down">
         <h1 class="text-3xl font-semibold text-gray-800 lg:text-4xl py-4">
             Eu tenho mais <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#0077b6] from-[#00b4d8]">
                 afinidade</span> com:
         </h1>
         <p align="center">
-            <a href="https://skillicons.dev">
+            <a>
                 <img src="https://skillicons.dev/icons?i=html,css,js,jquery,py,django,php" />
             </a>
         </p>
@@ -209,14 +212,14 @@
         </h1>
 
         <p align="center">
-            <a href="https://skillicons.dev">
+            <a>
                 <img src="https://skillicons.dev/icons?i=c,java,linux,mysql" />
             </a>
         </p>
     </section>
-    <!-- Sessão com experiências e idiomas -->
+    <!-- Seção com experiências e idiomas -->
     <section class="experinces-idioms pt-8 px-4 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mb-8"
-        data-aos="fade-right">
+        data-aos="fade-right" id="experiencia">
         <div class="experience lg:col-span-3 md:px-10 p-4">
             <h1 class="text-3xl font-semibold text-gray-800 lg:text-4xl mb-4 text-center">
                 Minha <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#0077b6] from-[#00b4d8]">
@@ -274,14 +277,14 @@
             <div class="border-l-2">
                 <!-- Ingles -->
                 <div
-                    class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-gradient-to-r to-[#023E8A] from-[#03045E] text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                    class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-gradient-to-r from-[#03045E] to-[#023E8A] text-white rounded mb-10 flex-col sm:flex-row space-y-4 sm:space-y-0">
                     <!-- bolinha -->
                     <div
-                        class="w-5 h-5 bg-gradient-to-r to-[#023E8A] from-[#03045E] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0">
+                        class="w-5 h-5 bg-gradient-to-r from-[#03045E] to-[#023E8A] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 sm:mt-0">
                     </div>
 
                     <!-- linha horizontal -->
-                    <div class="w-10 h-1 bg-gradient-to-r to-[#023E8A] from-[#03045E] absolute -left-10 z-0"></div>
+                    <div class="w-10 h-1 bg-gradient-to-r from-[#03045E] to-[#023E8A] absolute -left-10 z-0"></div>
 
                     <!-- conteudo -->
                     <div class="flex-auto">
@@ -291,10 +294,10 @@
                 </div>
                 <!-- Espanhol -->
                 <div
-                    class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-gradient-to-r to-[#0077B6] from-[#0077B6] text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                    class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-gradient-to-r to-[#0077B6] from-[#0077B6] text-white rounded mb-10 flex-col sm:flex-row space-y-4 sm:space-y-0">
                     <!-- bolinha -->
                     <div
-                        class="w-5 h-5 bg-gradient-to-r to-[#0077B6] from-[#0077B6] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0">
+                        class="w-5 h-5 bg-gradient-to-r to-[#0077B6] from-[#0077B6] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 sm:mt-0">
                     </div>
 
                     <!-- linha horizontal -->
@@ -310,10 +313,10 @@
                 <!-- Francês -->
 
                 <div
-                    class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-gradient-to-r to-[#0096C7] from-[#0096C7] text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                    class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-gradient-to-r to-[#0096C7] from-[#0096C7] text-white rounded mb-10 flex-col sm:flex-row space-y-4 sm:space-y-0">
                     <!-- bolinha -->
                     <div
-                        class="w-5 h-5 bg-gradient-to-r to-[#0096C7] from-[#0096C7] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0">
+                        class="w-5 h-5 bg-gradient-to-r to-[#0096C7] from-[#0096C7] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 sm:mt-0">
                     </div>
 
                     <!-- linha horizontal -->
@@ -330,8 +333,8 @@
 
     </section>
 
-    <!-- Sessão com projetos -->
-    <section class="about-me grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mt-10 md:px-10 sm:px-4">
+    <!-- Seção com projetos -->
+    <section class="about-me grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mt-10 md:px-10 sm:px-4" id="projetos">
         <div class="about-me-text lg:col-span-3 md:px-10 p-4" data-aos="fade-down">
             <h1 class="text-3xl font-semibold text-gray-800 lg:text-4xl py-4">
                 <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#0096C7] from-[#0096C7]">
@@ -362,21 +365,21 @@
                 </li>
             </ul>
         </div>
-        <div
-            class="about-me-photo rounded-xl bg-repeat-space lg:col-span-2 bg-left bg-right bg-fixed bg-[url('imagens/foto_projetos.jpg')]">
-            <div class="h-96"></div>
+        <div class="lg:col-span-2">
+            <img src="imagens/foto_projetos.jpg"
+                class="w-full h-[540px] object-cover rounded-xl inset-0 grayscale hover:grayscale-0 transition duration-300 hover:shadow-2xl">
         </div>
     </section>
 
-    <!-- Sessão com testemunhas -->
+    <!-- Seção com testemunhas -->
     <section class="testemunhas mt-6">
         <div class="px-6 py-10 mx-auto">
             <h1 class="text-3xl font-semibold text-gray-800 text-center lg:text-4xl">
                 O que as
                 <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#0077b6] from-[#00b4d8]">
-                    pessoas
+                    pessoas estão
                 </span>
-                estão dizendo?
+                dizendo?
             </h1>
             <!-- pequena barra cortada -->
             <div class="text-center mb-10">
@@ -392,10 +395,11 @@
             <div class="grid gap-6 text-center md:grid-cols-3">
                 <div>
                     <div class="block rounded-lg bg-white shadow-lg hover:scale-105">
-                        <div class="h-28 overflow-hidden rounded-t-lg bg-gradient-to-r from-[#CAF0F8] via-[#ADE8F4] to-[#90E0EF]"></div>
                         <div
-                            class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white">
-                            <img src="imagens/fabio.jpg"/>
+                            class="h-28 overflow-hidden rounded-t-lg bg-gradient-to-r from-[#CAF0F8] via-[#ADE8F4] to-[#90E0EF]">
+                        </div>
+                        <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white">
+                            <img src="imagens/fabio.jpg" />
                         </div>
                         <div class="p-6">
                             <h4 class="mb-4 text-2xl font-semibold">Fabio dos Santos Reszko Junior</h4>
@@ -416,9 +420,10 @@
                 <!--segunda pessoa-->
                 <div>
                     <div class="block rounded-lg bg-white shadow-lg transform transition hover:scale-105">
-                        <div class="h-28 overflow-hidden rounded-t-lg bg-gradient-to-r from-[#48CAE4] via-[#00B4D8] to-[#0096C7]"></div>
                         <div
-                            class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white">
+                            class="h-28 overflow-hidden rounded-t-lg bg-gradient-to-r from-[#48CAE4] via-[#00B4D8] to-[#0096C7]">
+                        </div>
+                        <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white">
                             <img src="imagens/tieppo.png" />
                         </div>
                         <div class="p-6">
@@ -427,7 +432,8 @@
                             <p class="mt-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                     class="inline-block h-7 w-7 pr-2" viewBox="0 0 24 24">
-                                    <path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
+                                    <path
+                                        d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
                                 </svg>
                                 Neque cupiditate assumenda in maiores repudi mollitia
                                 architecto.
@@ -439,9 +445,10 @@
                 <!--terceira pessoa-->
                 <div>
                     <div class="block rounded-lg bg-white shadow-lg hover:scale-105">
-                        <div class="h-28 overflow-hidden rounded-t-lg bg-gradient-to-r from-[#0077B6] via-[#023E8A] to-[#03045E]"></div>
                         <div
-                            class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white">
+                            class="h-28 overflow-hidden rounded-t-lg bg-gradient-to-r from-[#0077B6] via-[#023E8A] to-[#03045E]">
+                        </div>
+                        <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white">
                             <img src="imagens/marlon.jpg" />
                         </div>
                         <div class="p-6">
