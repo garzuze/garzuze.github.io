@@ -64,7 +64,7 @@
         </div>
     </nav>
     <!-- Primeira sessão de conteúdo ("hero") -->
-    <div class="hero h-64 pt-8 text-center">
+    <section class="hero h-64 pt-8 text-center">
         <div class="inline-block">
             <h1 id="digitado" class="font-bold text-3xl sm:text-6xl">Lucas Garzuze Cordeiro</h1>
         </div>
@@ -85,13 +85,13 @@
             class="bg-gradient-to-r to-[#0077b6] from-[#00b4d8] mt-6 inline-flex items-center bg-blue-800 hover:shadow-lg hover:shadow-cyan-500/50 text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center">
             Entrar em contato
         </a>
-    </div>
+    </section>
     <!-- Sessão com foto bem bonita em parallax -->
-    <div
-        class="main-photo items-center justify-center h-96 bg-fixed bg-center bg-no-repeat bg-cover bg-[url('imagens/garzuze_redimensionado.png')]">
-    </div>
+    <section
+        class="main-photo h-96 bg-fixed bg-center bg-no-repeat bg-cover bg-[url('imagens/foto_main.png')]">
+    </section>
     <!-- Coisas que eu faço -->
-    <div class="features h-96" id="sobre-mim">
+    <section class="features">
         <section class="bg-white">
             <div data-aos="fade-down" class="feature-title container px-6 py-10 mx-auto">
                 <h1 class="text-3xl font-semibold text-gray-800 text-center lg:text-4xl">
@@ -161,7 +161,26 @@
         </section>
 
 
-    </div>
+    </section>
+    <!-- Sessão de sobre -->
+    <section class="about-me grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mt-10 md:px-10 sm:px-4">
+        <div class="about-me-photo rounded-xl lg:col-span-2 px-4 bg-center sm:bg-left bg-fixed bg-[url('imagens/foto_sobre.jpg')]">
+            <!-- <img src="imagens/eu_redimensionado.jpg" class="rounded-xl h-[414px]"> -->
+            <div class="h-96"></div>
+        </div>
+        <div class="about-me-text lg:col-span-3 md:px-10 p-4" data-aos="fade-down">
+            <h1 class="text-3xl font-semibold text-gray-800 lg:text-4xl mb-4">
+                Mais sobre mim
+            </h1>
+            <p class="lg:text-xl md:text-l font-medium">
+                Sou um desenvolvedor de sites cursando técnico em informática no IFPR, interessado em iniciar uma carreira na indústria de desenvolvimento web! <br>
+                Desde menor, sou apaixonado por tecnologia, solução de problemas e design criativo. <br>
+                Dentre meus projetos, já desenvolvi um site de portfólio para uma fotógrafa; desenvolvi meu próprio site de currículo e desenvolvi um site de e-commerce full-stack em Django para o meu pai. <br>
+                Tenho outros projetos além da área de web, que envolvem Java com interface gráfica e visualização de dados com Python, utilizando pandas, matplotlib, json e APIs.
+            </p>
+        </div>
+    </section>
+    <!-- Scripts e etc -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
