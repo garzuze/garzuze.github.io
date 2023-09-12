@@ -10,6 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="js_novo.js"></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -49,12 +50,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#projetos"
-                            class="font-sans font-light	block py-2 pl-3 pr-4 text-[#0096c7] rounded  sm:border-0 hover:underline sm:p-0">Projetos</a>
+                        <a href="#experiencia"
+                            class="font-sans font-light	block py-2 pl-3 pr-4 text-[#0096c7] rounded  sm:border-0 hover:underline sm:p-0">Experiência</a>
                     </li>
                     <li>
-                        <a href="#experiencia"
-                            class="font-sans font-light	block py-2 pl-3 pr-4 text-[#0077b6] rounded  sm:border-0 hover:underline sm:p-0">Experiência</a>
+                        <a href="#projetos"
+                            class="font-sans font-light	block py-2 pl-3 pr-4 text-[#0077b6] rounded  sm:border-0 hover:underline sm:p-0">Projetos</a>
                     </li>
                     <li>
                         <a href="#contato"
@@ -481,7 +482,7 @@
         </div>
     </section>
     <!-- Seção final Call To Action -->
-    <section class="cta sm:h-96 pt-8 mb-10">
+    <section class="cta sm:h-96 pt-8 mb-10" id="contato">
         <div class="sm:h-96 w-full rounded-xl bg-gradient-to-r from-[#48CAE4] via-[#0077B6] to-[#023E8A] p-1">
             <div class="h-full w-full bg-white rounded-xl grid grid-cols-1 place-items-center">
                 <div class="text-center">
@@ -529,6 +530,24 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <!-- Descer com suavidade quando um item é clicado no menu -->
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
     </script>
 </body>
 
