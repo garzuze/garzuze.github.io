@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CUSTOM SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #242424;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #231f20;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #110f10;
+}
+
+/* Class used in JS event */
+.image-fade {
+    animation: ImageFadeIn 0.5s ease-in-out;
+}
+@keyframes ImageFadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+
+/* Classes used in the FAQ */
+.answer {
+    transition: max-height 1s ease-in-out;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+}
+
+.question {
+    transition: background-color 1s ease-in-out;
+}
+
+.faq.active .question {
+    background-color: #8e793e;
+}
+
+.faq.active ion-icon {
+    transform: rotate(180deg);
+}
+
+ion-icon {
+    transition: transform .2s ease-in-out;
+}
