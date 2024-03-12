@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBK Contabilidade</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@600&family=Lato&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+<body class="bg-neutral-950">
+    <div class="bg-[url(../static/gold_bg.jpg)] bg-cover bg-no-repeat">
+        <div class="mx-2 md:mx-18 lg:mx-20 h-[820px] xl:mx-auto">
+            <nav class="bg-transparent text-white font-pop p-4 md:p-5 md:flex md:items-center md:justify-between 2xl:max-w-screen-xl mx-auto">
+                <div class="flex justify-between items-center w-full">
+                    <p>
+                        <a href="index.html" class="">
+                            <img src="../static/logo_white.png" class="md:ml-6 h-7 md:h-10 inline" alt="MBK Logo" />
+                        </a>
+                    </p>
+                    <p class="text-2xl cursor-pointer mx-2 md:hidden block">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    </p>
+
+                    <ul
+                        class="absolute w-full left-0 py-4 opacity-0 top-[-400px] transition-all ease-in duration-500 z-[1] md:flex md:items-center md:z-auto md:static md:w-auto md:py-0 md:pl-0 md:opacity-100">
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="duration-300">
+                                Home
+                            </a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="duration-300">
+                                Serviços
+                            </a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="duration-300">
+                                Clientes
+                            </a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="duration-300">
+                                Quem somos
+                            </a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="duration-300">
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="duration-300">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="2xl:max-w-screen-xl mx-auto">
+                <div class="w-full xl:w-1/2 md:w-4/5 p-6 md:p-12 font-dm text-white mx-2">
+                    <p class="uppercase text-xs tracking-widest my-8 subpixel-antialiased">
+                        MBK contabilidade & consultoria
+                    </p>
+                    <h1 class="text-3xl font-bold lg:text-6xl">
+                        Não é startup.
+                    </h1>
+                    <h1 class="text-3xl font-bold lg:text-6xl">
+                        É tradição com tecnologia
+                    </h1>
+                    <p class="text-lg text-gray-200 lg:text-xl my-8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eum consectetur exercitationem
+                        officiis illo at quibusdam ad blanditiis rerum officia laudantium, commodi veritatis ipsum dolorum
+                        nisi laboriosam possimus qui illum?
+                    </p>
+                    <div class="relative inline-flex group sm:m-4">
+                        <div
+                            class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#635632] via-[#8e793e] to-[#ab964f] rounded-lg blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+                        </div>
+                        <a class="relative inline-flex items-center justify-center px-5 py-2.5 font-semibold transition-all duration-200 bg-[#231f20] rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#231f20]"
+                            role="button">
+                            Comece agora
+                            <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full 2xl:max-w-screen-xl mx-auto h-[640px] text-white">
+        <div
+            class="image-slider w-full md:w-5/6 h-full mx-auto py-6 my-8 rounded-xl relative bg-cover bg-center bg-[url(../static/bruno.jpg)] transition">
+            <div
+                class="arrow-left w-12 h-12 flex justify-center items-center cursor-poiner absolute top-[40%] text-2xl text-stone-950 hover:text-stone-200 transition-all left-0.5 sm:left-4 ">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div
+                class="arrow-right w-12 h-12 flex justify-center items-center cursor-pointer absolute top-[40%] text-2xl text-stone-950 hover:text-stone-200 transition-all right-0.5 sm:right-4">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div
+                class="caption absolute bottom-0 left-0 w-full pt-16 px-4 pb-8 bg-gradient-to-b from-transparent to-black">
+                <h1 class="text-2xl font-bold">Bruno</h1>
+                <p>We are the champions, my friends</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <section class="social-proof my-8 mx-2 md:mx-18 lg:mx-20 2xl:max-w-screen-xl 2xl:mx-auto">
+        <div class="py-8 px-4 mx-auto w-full text-center lg:py-16 lg:px-6">
+            <div class="mx-auto max-w-screen-sm">
+                <h2 class="mb-4 text-3xl lg:text-4xl font-dm font-bold text-white">O que nossos clientes estão dizendo
+                </h2>
+                <p class="mb-8 font-light text-gray-300 lg:mb-16 sm:text-xl">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. A similique quia dolorem commodi explicabo eaque itaque quis dignissimos</p>
+            </div>
+            <div class="grid w-full mb-2 lg:mb-4 lg:grid-cols-2 mx-auto">
+                <figure
+                    class="flex flex-col justify-center items-center p-8 text-center bg-zinc-800 border-b border-[#ab964f] shadow-2xl shadow-[#ab964f]/50 md:p-12 lg:border-r lg:rounded-tr-none rounded-t-2xl">
+                    <video>
+                        <!-- maneiro -->
+                    </video>
+                    <figcaption class="flex justify-center items-center space-x-3">
+                        <img class="w-9 h-9 rounded-full" src="../static/lucas.jpg" alt="profile picture">
+                        <div class="space-y-0.5 font-medium text-left">
+                            <div class="text-gray-300">Lucas Garzuze Cordeiro</div>
+                            <div class="text-sm font-light text-gray-300">Empresa maneira</div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure
+                    class="flex flex-col justify-center items-center p-8 text-center bg-zinc-800 border-b border-[#ab964f] shadow-2xl shadow-[#ab964f]/50 md:p-12 lg:rounded-tr-2xl">
+                    <video>
+                        <!-- maneiro -->
+                    </video>
+                    <figcaption class="flex justify-center items-center space-x-3">
+                        <img class="w-9 h-9 rounded-full" src="../static/bruno.jpg" alt="profile picture">
+                        <div class="space-y-0.5 font-medium text-left">
+                            <div class="text-gray-300">Bruno Fey</div>
+                            <div class="text-sm font-light text-gray-300">Empresa bacana</div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure
+                    class="flex flex-col justify-center items-center p-8 text-center bg-zinc-800 border-b border-[#ab964f] shadow-2xl shadow-[#ab964f]/50 lg:border-b-0 md:p-12 lg:border-r lg:rounded-bl-2xl">
+                    <video>
+
+                    </video>
+                    <figcaption class="flex justify-center items-center space-x-3">
+                        <img class="w-9 h-9 rounded-full" src="../static/philippe.jpg" alt="profile picture">
+                        <div class="space-y-0.5 font-medium text-left">
+                            <div class="text-gray-300">Philippe</div>
+                            <div class="text-sm font-light text-gray-300">TCC sobre tabuada do 7</div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure
+                    class="flex flex-col justify-center items-center p-8 text-center bg-zinc-800 border-[#ab964f] shadow-2xl shadow-[#ab964f]/50 md:p-12 rounded-b-2xl lg:rounded-bl-none">
+                    <video>
+
+                    </video>
+                    <figcaption class="flex justify-center items-center space-x-3">
+                        <img class="w-9 h-9 rounded-full" src="../static/clarice.jpg" alt="profile picture">
+                        <div class="space-y-0.5 font-medium text-left">
+                            <div class="text-gray-300">Dona Clarice</div>
+                            <div class="text-sm font-light text-gray-300">Empresa maneira</div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="w-full 2xl:max-w-screen-xl 2xl:mx-auto">
+        <div class="mx-2 md:mx-18 lg:mx-20 sm:flex">
+            <div class="w-full md:w-1/2 p-6 md:p-12">
+                <h1 class="text-3xl lg:text-4xl font-dm font-bold text-white">Quem somos</h1>
+                <p class="text-lg text-gray-200 lg:text-xl my-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eum consectetur exercitationem
+                    officiis illo at quibusdam ad blanditiis rerum officia laudantium, commodi veritatis ipsum dolorum
+                    nisi laboriosam possimus qui illum?
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 p-6 sm:p-12">
+                <img src="../static/bruno.jpg" class="rounded-lg">
+            </div>
+        </div>
+    </section>
+    <section class="w-full min-h-[600px] text-white 2xl:max-w-screen-xl 2xl:mx-auto">
+        <div class="mx-2 md:mx-18 lg:mx-20">
+            <div class="w-full py-12 text-center">
+                <h1 class="text-3xl lg:text-4xl font-dm font-bold">Perguntas frequentes</h1>
+                <p class="text-lg text-gray-200 lg:text-xl my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="faq w-full sm:w-3/4 mx-auto cursor-pointer">
+                <div class="question flex justify-between items-center p-4 border-[#8e793e] border-2 rounded-t-lg">
+                    <p class="font-semibold text-gray-100">Pergunta maneira 1</p>
+                    <ion-icon name="chevron-down-outline" class="text-[#635632]"></ion-icon>
+                </div>
+                <div class="answer max-h-0 overflow-hidden border-[#8e793e] border-x-2">
+                    <p class="p-4 leading-4 border-[#8e793e] border-b-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum necessitatibus, nihil dolore repellendus quos sunt nesciunt ad velit cum voluptate inventore ea quibusdam repudiandae officiis provident non reiciendis nobis eveniet.</p>
+                </div>
+            </div>
+            <div class="faq w-full sm:w-3/4 mx-auto cursor-pointer">
+                <div class="question flex justify-between items-center p-4 border-[#8e793e] border-x-2">
+                    <p class="font-semibold text-gray-100">Pergunta maneira 2</p>
+                    <ion-icon name="chevron-down-outline" class="text-[#635632]"></ion-icon>
+                </div>
+                <div class="answer max-h-0 overflow-hidden border-[#8e793e] border-x-2">
+                    <p class="p-4 leading-4 border-[#8e793e] border-t-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum necessitatibus, nihil dolore repellendus quos sunt nesciunt ad velit cum voluptate inventore ea quibusdam repudiandae officiis provident non reiciendis nobis eveniet.</p>
+                </div>
+            </div>
+            <div class="faq w-full sm:w-3/4 mx-auto cursor-pointer">
+                <div class="question flex justify-between items-center p-4 border-[#8e793e] border-x-2 border-t-2">
+                    <p class="font-semibold text-gray-100">Pergunta maneira</p>
+                    <ion-icon name="chevron-down-outline" class="text-[#635632]"></ion-icon>
+                </div>
+                <div class="answer max-h-0 overflow-hidden border-[#8e793e] border-x-2 border-b-2">
+                    <p class="p-4 leading-4 border-[#8e793e] border-t-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum necessitatibus, nihil dolore repellendus quos sunt nesciunt ad velit cum voluptate inventore ea quibusdam repudiandae officiis provident non reiciendis nobis eveniet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
