@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>garzuze.me | Landing Page</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js_novo.js"></script>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico?"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Menu de navegação no topo página -->
+    <nav class="menu bg-gray-50">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <h1 class="self-center sm:text-2xl font-semibold whitespace-nowr text-sky-600">
+                <a href="https://garzuze.me/" class="flex items-center">
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-[#00b4d8] to-[#0077b6]">garzuze.me</span>
+                </a>
+            </h1>
+
+            <button data-collapse-toggle="navbar-solid-bg" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-[gray]-100 focus:outline-none focus:ring-2 focus:ring-gray-2"
+                aria-controls="navbar-solid-bg" aria-expanded="false">
+                <span class="sr-only">Abrir menu principal</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+                <ul
+                    class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+                    <li>
+                        <a href="#home"
+                            class=" font-sans font-light block py-2 pl-3 pr-4 text-[#48cae4] rounded sm:border-0 hover:underline sm:p-0">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sobre-mim"
+                            class="font-sans font-light	block py-2 pl-3 pr-4 text-[#00b4d8] rounded sm:border-0 hover:underline sm:p-0">
+                            Sobre mim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experiencia"
+                            class="font-sans font-light	block py-2 pl-3 pr-4 text-[#0096c7] rounded  sm:border-0 hover:underline sm:p-0">Experiência</a>
+                    </li>
+                    <li>
+                        <a href="#projetos"
+                            class="font-sans font-light	block py-2 pl-3 pr-4 text-[#0077b6] rounded  sm:border-0 hover:underline sm:p-0">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="#contato"
+                            class="font-sans font-light block py-2 pl-3 pr-4 text-[#023e8a] rounded  sm:border-0 hover:underline sm:p-0">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Primeira Seção de conteúdo ("hero") -->
+    <section class="hero h-64 pt-8 text-center" id="home">
+        <div class="inline-block">
+            <h1 id="digitado" class="font-bold text-3xl sm:text-6xl">Lucas Garzuze Cordeiro</h1>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+            <p class="text-xl">Conhecimentos: </p>
+            <div class="inner-headings">
+                <span class="font-bold text-xl text-[#03045e]">Python</span> <br>
+                <span class="font-bold text-xl text-[#023e8a]">Django</span> <br>
+                <span class="font-bold text-xl text-[#0077b6]">HTML</span> <br>
+                <span class="font-bold text-xl text-[#0096c7]">CSS</span> <br>
+                <span class="font-bold text-xl text-[#00b4d8]">JavaScript</span> <br>
+                <span class="font-bold text-xl text-[#00b4d8]">jQuery</span> <br>
+                <span class="font-bold text-xl text-[#48cae4]">PHP</span> <br>
+                <span class="font-bold text-xl text-[#90e0ef]">SQL</span> <br>
+            </div>
+        </div>
+        <a href="https://wa.me/5541995149971"
+            class="bg-gradient-to-r to-[#0077b6] from-[#00b4d8] mt-6 inline-flex items-center bg-blue-800 shadow-[0_9px_0_rgb(2,62,138)] hover:shadow-[0_4px_0px_rgb(2,62,138)] ease-out hover:translate-y-1 transition-all text-white rounded-lg font-bold px-5 py-2.5 ">
+            Entrar em contato
+        </a>
+    </section>
+    <!-- Seção com foto bem bonita em parallax -->
+    <section class="main-photo h-96 bg-fixed bg-center bg-cover bg-[url('imagens/foto_main.png')]">
+    </section>
+    <!-- Coisas que eu faço -->
+    <section class="features pt-10" id="sobre-mim">
+        <section class="bg-white">
+            <div class="feature-title container px-6 mx-auto text-center">
+                <div class="relative group inline-block">
+                    <h1 class="text-3xl font-semibold text-gray-800 text-center lg:text-4xl">
+                        Minhas
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00b4d8] to-[#0077b6]">
+                            habilidades
+                        </span>
+                        como desenvolvedor:
+
+                    </h1>
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-1 bg-gradient-to-r from-[#00b4d8] to-[#0077b6] transition-all group-hover:w-full"></span>
+                </div>
+                <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
+                    <div data-aos="fade-right" data-aos-duration="1000"
+                        class="full-stack p-8 space-y-3 border-2 border-[#0096c7] rounded-xl">
+                        <span class="inline-block text-[#0096c7]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
+                            </svg>
+
+                        </span>
+
+                        <h1 class="text-2xl font-bold text-gray-700">
+                            Desenvolvimento Fullstack!
+                        </h1>
+
+                        <p class="text-gray-500 font-semibold">
+                            Sites visualmente atrativos e com foco no usuário. Integração backend com PHP ou Django.
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-right" data-aos-duration="1000"
+                        class="creative p-8 space-y-3 border-2 border-[#0096c7] rounded-xl">
+                        <span class="inline-block text-[#0096c7]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                            </svg>
+                        </span>
+
+                        <h1 class="text-2xl font-bold text-gray-700">
+                            Design criativo e agradável aos olhos!
+                        </h1>
+
+                        <p class="text-gray-500 font-semibold">
+                            Procuro me atualizar das tendências de design e me esforço para trazer resultados que
+                            impressionam.
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-right" data-aos-duration="1000"
+                        class="learning p-8 space-y-3 border-2 border-[#0096c7] rounded-xl">
+                        <!-- transform transition hover:scale-125 (vai que eu preciso) -->
+                        <span class="inline-block text-[#0096c7]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                            </svg>
+
+                        </span>
+
+                        <h1 class="text-2xl font-bold text-gray-900 capitalize">
+                            Aprendizado contínuo!
+                        </h1>
+
+                        <p class="text-gray-500 font-semibold">
+                            Amo aprender e procuro me capacitar todos os dias para ser uma pessoa (e um desenvolvedor)
+                            melhor!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+    <!-- Seção de sobre -->
+    <section class="about-me grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 pt-10 md:px-10 sm:px-4">
+        <div class="lg:col-span-2">
+            <img src="imagens/foto_sobre.jpg"
+                class="w-full h-72 object-cover rounded-xl inset-0 grayscale hover:grayscale-0 transition duration-300 hover:shadow-2xl">
+        </div>
+        <div class="about-me-text lg:col-span-3 md:px-10 p-4" data-aos="fade-down">
+            <h1 class="text-3xl font-semibold text-gray-800 lg:text-4xl mb-4">
+                Sobre mim
+            </h1>
+            <p class=" md:text-l font-medium">
+                Sou um desenvolvedor de sites cursando técnico em informática no IFPR, interessado em iniciar uma
+                carreira na indústria de desenvolvimento web! <br>
+                Desde menor, sou apaixonado por tecnologia, solução de problemas e design criativo. <br>
+                Dentre meus projetos, já desenvolvi um site de portfólio para uma fotógrafa; desenvolvi meu próprio site
+                de currículo e desenvolvi um site de e-commerce full-stack em Django para o meu pai. <br>
+                Tenho outros projetos além da área de web, que envolvem Java com interface gráfica e visualização de
+                dados com Python, utilizando pandas, matplotlib, json e APIs.
+            </p>
+        </div>
+    </section>
+    <!-- Seção com linguagens e ferramentas -->
+    <section class="tools text-center pt-10" data-aos="fade-down">
+        <h1 class="text-3xl font-semibold text-gray-800 lg:text-4xl my-4">
+            Eu tenho mais <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#0077b6] from-[#00b4d8]">
+                afinidade</span> com:
+        </h1>
+        <p align="center">
+            <a>
+                <img src="https://skillicons.dev/icons?i=html,css,js,jquery,py,django,php" />
+            </a>
+        </p>
+
+        <h1 class="text-3xl font-semibold text-gray-800 lg:text-4xl my-4">
+            Eu sei o <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#0077b6] from-[#00b4d8]">
+                básico</span> de:
+        </h1>
+
+        <p align="center">
+            <a>
+                <img src="https://skillicons.dev/icons?i=c,java,linux,mysql" />
+            </a>
+        </p>
+    </section>
+    <!-- Seção com experiências e idiomas -->
+    <section class="experinces-idioms pt-10 px-4 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5"
+        data-aos="fade-right" id="experiencia">
+        <div class="experience lg:col-span-3 md:px-10 p-4">
+            <h1 class="text-3xl font-semibold text-gray-800 lg:text-4xl mb-8 text-center">
+                Minha <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#0077b6] from-[#00b4d8]">
+                    experiência:</span>
+            </h1>
+
+            <ol class="relative border-l border-gray-200">
+                <li class="mb-10 ml-6">
+                    <span
+                        class="absolute flex items-center justify-center w-6 h-6 bg-[#90e0ef] text-[#023e8a] rounded-full -left-3 ring-8 ring-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                        </svg>
+
+                    </span>
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">
+                        Bolsista no projeto Textos e Contextos, IFPR
+                    </h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400">
+                        Duração: 08/2022 até 12/2022.
+                    </time>
+                    <p class="mb-4 text-base font-normal text-gray-500">
+                        Produção de textos, escrita e conhecimento sobre atualidades melhorados.
+                    </p>
+                </li>
+                <li class="mb-10 ml-6">
+                    <span
+                        class="absolute flex items-center justify-center w-6 h-6 bg-[#90e0ef] text-[#023e8a] rounded-full -left-3 ring-8 ring-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                        </svg>
+
+                    </span>
+                    <h3 class="mb-1 text-lg font-semibold text-gray-900 ">Menor aprendiz como Auxiliar Administrativo
+                    </h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400">
+                        Tempo de trabalho: 03/2021 até 07/2022.
+                    </time>
+                    <p class="text-base font-normal text-gray-500">
+                        Capacidade de solução de problemas, atendimento ao cliente e relação interpessoal melhorados.
+                    </p>
+                </li>
+            </ol>
+
+        </div>
+        <div class="idioms lg:col-span-2 md:px-10 p-4" data-aos="fade-left  ">
+            <h1 class="text-3xl font-semibold text-gray-800 lg:text-4xl mb-8 text-center">
+                Idiomas:</span>
+            </h1>
+
+            <div class="border-l-2">
+                <!-- Ingles -->
+                <div
+                    class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-gradient-to-r from-[#03045E] to-[#023E8A] text-white rounded mb-10 flex-col sm:flex-row space-y-4 sm:space-y-0">
+                    <!-- bolinha -->
+                    <div
+                        class="w-5 h-5 bg-gradient-to-r from-[#03045E] to-[#023E8A] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 sm:mt-0">
+                    </div>
+
+                    <!-- linha horizontal -->
+                    <div class="w-10 h-1 bg-gradient-to-r from-[#03045E] to-[#023E8A] absolute -left-10 z-0"></div>
+
+                    <!-- conteudo -->
+                    <div class="flex-auto">
+                        <h1 class="mb-1 text-lg font-semibold">Inglês</h1>
+                        <h3>Intermediário-avançado (B2)</h3>
+                    </div>
+                </div>
+                <!-- Espanhol -->
+                <div
+                    class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-gradient-to-r to-[#0077B6] from-[#0077B6] text-white rounded mb-10 flex-col sm:flex-row space-y-4 sm:space-y-0">
+                    <!-- bolinha -->
+                    <div
+                        class="w-5 h-5 bg-gradient-to-r to-[#0077B6] from-[#0077B6] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 sm:mt-0">
+                    </div>
+
+                    <!-- linha horizontal -->
+                    <div class="w-10 h-1 bg-gradient-to-r to-[#0077B6] from-[#0077B6] absolute -left-10 z-0"></div>
+
+                    <!-- conteudo -->
+                    <div class="flex-auto">
+                        <h1 class="mb-1 text-lg font-semibold">Espanhol</h1>
+                        <h3>Intermediário (B1)</h3>
+                    </div>
+                </div>
+
+                <!-- Francês -->
+
+                <div
+                    class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-gradient-to-r to-[#0096C7] from-[#0096C7] text-white rounded mb-10 flex-col sm:flex-row space-y-4 sm:space-y-0">
+                    <!-- bolinha -->
+                    <div
+                        class="w-5 h-5 bg-gradient-to-r to-[#0096C7] from-[#0096C7] absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 sm:mt-0">
+                    </div>
+
+                    <!-- linha horizontal -->
+                    <div class="w-10 h-1 bg-gradient-to-r to-[#0096C7] from-[#0096C7] absolute -left-10 z-0"></div>
+
+                    <!-- conteudo -->
+                    <div class="flex-auto">
+                        <h1 class="mb-1 text-lg font-semibold">Françês</h1>
+                        <h3>Básico (A1)</h3>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+    <!-- Seção com projetos -->
+    <section class="about-me grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 md:px-10 sm:px-4" id="projetos">
+        <div class="about-me-text lg:col-span-3 md:px-10 px-4" data-aos="fade-down">
+            <h1 class="text-3xl font-semibold text-gray-800 lg:text-4xl">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#0096C7] from-[#0096C7]">
+                    Projetos
+                </span>
+            </h1>
+            <ul class="w-full">
+                <li class="w-full border-b-2 border-[#03045E] border-opacity-100 py-4">
+                    Projeto Textos e Contextos selecionado para apresentação em evento acadêmico "SEpin: inovação para
+                    transformar a realidade", em Telêmaco Borba
+                </li>
+                <li class="w-full border-b-2 border-[#023E8A] border-opacity-100 py-4 ">
+                    Publicação de artigo na revista ciêntifica "Difusão"
+                </li>
+                <li class="w-full border-b-2 border-[#0077B6] border-opacity-100 py-4 ">
+                    Equipe vencedora do prêmio JAStartup, que promovia o conhecimento e a criação de startups. Parceria
+                    entre JA Brasil, KPMG e IFPR (2022)
+
+                </li>
+                <li class="w-full border-b-2 border-[#0096C7] border-opacity-100 py-4 ">
+                    Apresentação da startup em evento de ciência e inovação, IFTech
+                </li>
+                <li class="w-full border-b-2 border-[#00B4D8] border-opacity-100 py-4 ">
+                    Participação em Hackathon da Stellantis, que utilizava o matlab (2022);
+                </li>
+                <li class="w-full border-b-2 border-[#48CAE4] border-opacity-100 py-4 ">
+                    Conversação em inglês semanal (09/2022 até 11/2022)
+                </li>
+            </ul>
+        </div>
+        <div class="lg:col-span-2">
+            <img src="imagens/foto_projetos.jpg"
+                class="w-full h-[436px] object-cover rounded-xl inset-0 grayscale hover:grayscale-0 transition duration-300 hover:shadow-2xl">
+        </div>
+    </section>
+
+    <!-- Seção com testemunhas -->
+    <section class="testemunhas mt-6">
+        <div class="px-6 pt-10 mx-auto">
+            <h1 class="text-3xl font-semibold text-gray-800 text-center lg:text-4xl">
+                O que as
+                <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#0077b6] from-[#00b4d8]">
+                    pessoas estão
+                </span>
+                dizendo?
+            </h1>
+            <!-- pequena barra cortada -->
+            <div class="text-center mb-10">
+                <span class="inline-block w-1 h-1 rounded-full bg-[#023E8A] ml-1"></span>
+                <span class="inline-block w-3 h-1 rounded-full bg-[#0077B6] ml-1"></span>
+                <span
+                    class="inline-block w-40 h-1 rounded-full bg-gradient-to-r from-[#0096C7] via-[#0096C7] to-[#00B4D8]"></span>
+                <span class="inline-block w-3 h-1 rounded-full bg-[#0077B6] ml-1"></span>
+                <span class="inline-block w-1 h-1 rounded-full bg-[#023E8A] ml-1"></span>
+            </div>
+
+            <!--primeira pessoa-->
+            <div class="grid gap-6 text-center md:grid-cols-3">
+                <div>
+                    <div class="block rounded-lg bg-white shadow-lg hover:scale-105">
+                        <div
+                            class="h-28 overflow-hidden rounded-t-lg bg-gradient-to-r from-[#CAF0F8] via-[#ADE8F4] to-[#90E0EF]">
+                        </div>
+                        <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white">
+                            <img src="imagens/fabio.jpg" />
+                        </div>
+                        <div class="p-6">
+                            <h4 class="mb-4 text-2xl font-semibold">Fabio dos Santos Reszko Junior</h4>
+                            <p class="block mb-2 text-sm font-normal leading-none text-gray-400">
+                                Programador Python na Cavok
+                            </p>
+                            <hr />
+                            <p class="mt-4 text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="inline-block h-7 w-7 pr-2" viewBox="0 0 24 24">
+                                    <path
+                                        d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
+                                </svg>
+                                Lucas Garzuze detém de massa cinzenta altamente esponjosa quando se fala em absorção de
+                                conteúdo. Conceitos e ideias novos são facilmente abstraídos pelo garoto em um período
+                                anormalmente curto de tempo. Lucas é, sim, um ótimo conselheiro, mas o melhor em aplicar
+                                conselhos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--segunda pessoa-->
+                <div>
+                    <div class="block rounded-lg bg-white shadow-lg transform transition hover:scale-105">
+                        <div
+                            class="h-28 overflow-hidden rounded-t-lg bg-gradient-to-r from-[#48CAE4] via-[#00B4D8] to-[#0096C7]">
+                        </div>
+                        <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white">
+                            <img src="imagens/tieppo.png" />
+                        </div>
+                        <div class="p-6">
+                            <h4 class="mb-4 text-2xl font-semibold">Eduardo Tieppo</h4>
+                            <p class="block mb-2 text-sm font-normal leading-none text-gray-400">
+                                Professor no Instituto Federal do Paraná
+                            </p>
+                            <hr />
+                            <p class="mt-4 text-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="inline-block h-7 w-7 pr-2" viewBox="0 0 24 24">
+                                    <path
+                                        d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
+                                </svg>
+                                Durante o curso, o Lucas apresentou um potencial técnico incrível, apresentando
+                                naturalidade para dominar e aplicar novos conceitos. Sua dedicação em aprender
+                                constantemente e seu gosto pelo desenvolvimento o torna um ativo valioso para qualquer
+                                equipe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--terceira pessoa-->
+                <div>
+                    <div class="block rounded-lg bg-white shadow-lg hover:scale-105">
+                        <div
+                            class="h-28 overflow-hidden rounded-t-lg bg-gradient-to-r from-[#0077B6] via-[#023E8A] to-[#03045E]">
+                        </div>
+                        <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white">
+                            <img src="imagens/marlon.jpg" />
+                        </div>
+                        <div class="p-6">
+                            <h4 class="mb-4 text-2xl font-semibold">Marlon Edner Cordeiro</h4>
+                            <p class="block mb-2 text-sm font-normal leading-none text-gray-400">
+                                Especialista em RH
+                            </p>
+                            <hr/>
+                            <p class="mt-4 text-center	">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="inline-block h-7 w-7 pr-2" viewBox="0 0 24 24">
+                                    <path
+                                        d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
+                                </svg>
+                                Lucas é um profissional extremamente dedicado capaz de atuar em projetos complexos de forma que faz o difícil parecer simples. Seu maior valor está em repassar seu conhecimento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seção final Call To Action -->
+    <section class="cta sm:h-96 pt-8 mb-10" id="contato">
+        <div class="sm:h-96 w-full rounded-xl bg-gradient-to-r from-[#48CAE4] via-[#0077B6] to-[#023E8A] p-1">
+            <div class="h-full w-full bg-white rounded-xl grid grid-cols-1 place-items-center">
+                <div class="text-center">
+                    <h1 data-aos="zoom-in" class="font-bold text-3xl sm:text-6xl py-6">Sua jornada <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r to-[#0096C7] from-[#0096C7]">não
+                            deve</span> acabar aqui!</h1>
+                </div>
+                <div>
+                    <a href="https://wa.me/5541995149971"
+                        class="bg-gradient-to-r to-[#0077b6] from-[#00b4d8] bg-blue-800 shadow-[0_9px_0_rgb(2,62,138)] hover:shadow-[0_4px_0px_rgb(2,62,138)] ease-out hover:translate-y-1 transition-all text-white rounded-lg font-bold px-5 py-2.5 text-center mt-6 align-center">
+                        Entrar em contato
+                    </a>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="flex flex-col items-center bg-gray-200 text-center text-white">
+        <div class="container pt-9">
+            <div class="mb-9 flex justify-center">
+                <a href="https://www.linkedin.com/in/garzuze" class="mr-6 text-[#0096c7]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/garzuze" class="text-[#0077b6]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!--Copyright-->
+        <div class="w-full bg-gray-300 p-4 text-center text-neutral-700">
+            © 2023 Copyright:
+            <a class="text-[#0077b6] font-bold" href="https://garzuze.me/">Lucas Garzuze Cordeiro</a>
+        </div>
+    </footer>
+    <!-- Scripts e etc -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Descer com suavidade quando um item é clicado no menu -->
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
